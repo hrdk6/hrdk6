@@ -1,5 +1,8 @@
 <div align="center">
-  <img src="assets/hero.svg" alt="Hardik Gaonkar. I build AI agents and RAG systems, then benchmark them until the numbers hold. Chart: AegisOps pass rate on 21 injected failures rose from 76% on the first run to 100% on the third." width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+    <img src="assets/hero-light.svg" alt="Hardik Gaonkar. I build AI agents and RAG systems, then benchmark them until the numbers hold. Chart: AegisOps pass rate on 21 injected failures rose from 76% on the first run to 100% on the third." width="100%">
+  </picture>
 </div>
 
 I'm an AI & ML undergraduate (class of 2028) at BMS Institute of Technology and Management in Bengaluru. I build AI systems end to end, and I don't call one finished until a held-out benchmark says it works. I'm looking for AI/ML engineering internships in India.
