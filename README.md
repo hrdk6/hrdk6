@@ -1,40 +1,44 @@
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-    <img src="assets/hero-light.svg" alt="Hardik Gaonkar. I build AI agents and RAG systems, then benchmark them until the numbers hold. Chart: AegisOps pass rate on 21 injected failures rose from 76% on the first run to 100% on the third." width="100%">
+    <img src="assets/hero-light.svg" alt="Hardik Gaonkar. I build AI systems that prove they work. AegisOps pass rate 76% to 100% on 21 live failures, CareFlow AI Recall@1 0.955, GroundTruth faithfulness 0.94 to 0.97, 1,228 automated tests." width="100%">
   </picture>
+
+  <p>
+    <a href="https://my-portfolio-hrdk2.vercel.app"><b>Portfolio</b></a> &nbsp;&middot;&nbsp;
+    <a href="https://www.linkedin.com/in/hardik-gaonkar-b7706a376"><b>LinkedIn</b></a> &nbsp;&middot;&nbsp;
+    <a href="mailto:hardikgaonkar2025@gmail.com"><b>Email</b></a> &nbsp;&middot;&nbsp;
+    <a href="https://github.com/hrdk6/MyPortfolio/raw/HEAD/assets/Hardik_Gaonkar_Resume.pdf"><b>Résumé</b></a>
+  </p>
 </div>
 
-I'm an AI & ML undergraduate (class of 2028) at BMS Institute of Technology and Management in Bengaluru. I build AI systems end to end, and I don't call one finished until a held-out benchmark says it works. I'm looking for AI/ML engineering internships in India.
+AI & ML undergraduate at **BMS Institute of Technology and Management, Bengaluru** (B.E., 2028). I build AI systems end to end and don't call one finished until a held-out benchmark says it works. Open to **AI/ML engineering internships**.
 
-## What I've built
+## Featured work
 
-**[AegisOps](https://github.com/hrdk6/AegisOps)** is an incident-response agent for Kubernetes. It detects an SLO violation, gathers cited evidence from metrics, logs and traces, diagnoses the cause, applies a fix and checks that the service recovered. A deterministic Go policy engine caps what it may do, and risky fixes run in a sandbox first. On 21 failures injected into a live cluster, the pass rate went from 76% to 100% over three runs with 0 unsafe actions. That benchmark is rules-only, with no LLM involved.
-<br>`Go` `Python` `FastAPI` `PostgreSQL` `Kubernetes` `OpenTelemetry`
+| Project | What it does | Proof |
+| :-- | :-- | :-- |
+| **[AegisOps](https://github.com/hrdk6/AegisOps)**<br><sub>Go · Kubernetes · FastAPI · OpenTelemetry</sub> | Autonomous incident-response agent for Kubernetes. Detects SLO violations, cites evidence from metrics, logs and traces, fixes the cause and verifies recovery. A deterministic Go policy engine bounds what it may do; risky fixes run in a sandbox first. | **76% → 100%** pass rate on 21 live injected failures<br>**0** unsafe actions · **140s** median recovery |
+| **[CareFlow AI](https://github.com/hrdk6/CareFlow-AI)**<br><sub>FastAPI · pgvector · XGBoost · ONNX · Next.js</sub> | Clinical AI platform. The LLM only sees records the signed-in user may access, and patient identities are masked before any cloud call. Adds explainable risk models and chest X-ray triage. | **0.955** Recall@1 · **0.977** MRR<br>**0.71–0.80** X-ray ROC-AUC |
+| **[PatchPilot](https://github.com/hrdk6/PatchPilot)**<br><sub>LangGraph · Docker · Qdrant · React</sub> | Turns a repository and a bug report into a tested patch. Plans, patches and tests in a locked-down sandbox, feeding failures back into a budget-capped repair loop. | **537** tests · pass rate with **Wilson 95%** CIs |
+| **[GroundTruth](https://github.com/hrdk6/GroundTruth)**<br><sub>pgvector · BM25 in SQL · Next.js</sub> | Self-verifying RAG over Kubernetes docs. Checks every generated sentence against its source, then regenerates or declines to answer. | **0.94–0.97** faithfulness<br>**13** measurement bugs caught by self-audit |
 
-**[CareFlow AI](https://github.com/hrdk6/CareFlow-AI)** is a clinical AI platform. Its RAG answers only from records the signed-in user may see, and patient identities are masked before any cloud LLM call. Retrieval reaches Recall@1 0.955 on a 48-question benchmark. It also includes explainable readmission and length-of-stay models and a chest X-ray triage model.
-<br>`Python` `FastAPI` `pgvector` `XGBoost` `ONNX` `Next.js`
+<details>
+<summary><b>More projects</b></summary>
+<br>
 
-**[PatchPilot](https://github.com/hrdk6/PatchPilot)** takes a repository and a bug report and returns a tested patch. A LangGraph state machine plans, patches, runs the tests in a locked-down Docker sandbox and feeds failures back into a repair loop, with a budget cap. Every code chunk it retrieves is logged with the reason it was chosen.
-<br>`Python` `LangGraph` `Docker` `Qdrant` `React`
+- **[FieldNote](https://github.com/hrdk6/FieldNote)**: market and competitor intelligence. Four agents research, critique, analyze and write, and every claim carries a source.
+- **[AI Council](https://github.com/hrdk6/AI-Council)**: a panel of AI specialists debates a hard decision in parallel, then a chairman writes one directive.
+- **[MyPortfolio](https://github.com/hrdk6/MyPortfolio)**: my portfolio site, hand-written HTML, CSS and a WebGL liquid-glass background.
 
-**[GroundTruth](https://github.com/hrdk6/GroundTruth)** is a RAG system over Kubernetes docs that checks each generated sentence against its cited source, then regenerates or declines to answer. Faithfulness is 0.94 to 0.97. Its evaluation harness reports bootstrap confidence intervals, and a self-audit of that harness found 13 measurement bugs.
-<br>`Python` `pgvector` `BM25` `Next.js`
-
-**[FieldNote](https://github.com/hrdk6/FieldNote)** is a market and competitor intelligence assistant. Four agents research, critique, analyze and write, and every claim in a brief carries a source.
-
-**[AI Council](https://github.com/hrdk6/AI-Council)** puts a hard decision to a panel of AI specialists who debate it in parallel. A chairman then writes one directive.
+</details>
 
 ## Toolbox
 
-**Languages** Python, Go, TypeScript, JavaScript, SQL
-
-**GenAI** RAG, hybrid search, reranking, LLM agents, LangGraph, LLM evaluation, guardrails
-
-**ML** scikit-learn, XGBoost, SHAP, Hugging Face, ONNX Runtime, transfer learning
-
-**Backend and infra** FastAPI, PostgreSQL, pgvector, Docker, Kubernetes, GitHub Actions
-
-## Find me
-
-[Portfolio](https://my-portfolio-hrdk2.vercel.app) · [LinkedIn](https://www.linkedin.com/in/hardik-gaonkar-b7706a376) · [Email](mailto:hardikgaonkar2025@gmail.com)
+| | |
+| :-- | :-- |
+| **Languages** | Python · Go · TypeScript · JavaScript · SQL |
+| **GenAI** | RAG · hybrid search · reranking · LLM agents · LangGraph · LLM evaluation · guardrails |
+| **ML** | scikit-learn · XGBoost · SHAP · Hugging Face · ONNX Runtime · transfer learning |
+| **Backend & infra** | FastAPI · PostgreSQL · pgvector · Qdrant · Docker · Kubernetes · Prometheus · GitHub Actions |
+| **LLM platforms** | Claude · OpenAI · Gemini · Groq · NVIDIA NIM · Ollama |
