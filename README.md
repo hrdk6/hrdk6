@@ -1,23 +1,28 @@
-# Hardik Gaonkar
+<div align="center">
+  <img src="assets/hero.svg" alt="Hardik Gaonkar, AI and ML undergraduate in Bengaluru, open to AI/ML internships. An animated laptop types code while a pointer clicks Run and a mouse clicks." width="100%">
 
-AI & ML undergraduate at **BMS Institute of Technology and Management, Bengaluru** (B.E., 2028). I build AI systems end to end and don't call one finished until a measurement says it works. Open to **AI/ML engineering internships**.
+  <p>
+    <a href="https://my-portfolio-hrdk2.vercel.app"><b>Portfolio</b></a> &nbsp;&middot;&nbsp;
+    <a href="https://www.linkedin.com/in/hardik-gaonkar-b7706a376"><b>LinkedIn</b></a> &nbsp;&middot;&nbsp;
+    <a href="mailto:hardikgaonkar2025@gmail.com"><b>Email</b></a> &nbsp;&middot;&nbsp;
+    <a href="https://github.com/hrdk6/hrdk6/blob/main/assets/Hardik_Gaonkar_Resume.pdf"><b>Résumé</b></a>
+  </p>
+</div>
 
-[Portfolio](https://my-portfolio-hrdk2.vercel.app) · [LinkedIn](https://www.linkedin.com/in/hardik-gaonkar-b7706a376) · [Email](mailto:hardikgaonkar2025@gmail.com) · [Résumé](https://github.com/hrdk6/MyPortfolio/raw/HEAD/assets/Hardik_Gaonkar_Resume.pdf)
+AI & ML undergraduate at **BMS Institute of Technology and Management, Bengaluru** (B.E., 2028). I build AI systems end to end and don't call one finished until a measurement says it works.
 
 ## Projects
 
-### MachLume Studio
-A native Windows app that profiles AI workloads across the CPU, GPU and NPU using live hardware telemetry, and predicts LLM speed with a roofline model (2.4% prefill and 3.8% decode error on Llama 3 8B). Built with Rust and Tauri 2. The source is private.
+**MachLume Studio** is a native Windows app that profiles AI workloads across the CPU, GPU and NPU, and predicts LLM speed with a roofline model. Built with Rust and Tauri 2. The source is private.
 
-### [CareFlow AI](https://github.com/hrdk6/CareFlow-AI)
-A clinical AI platform where the LLM only sees records the signed-in user may access, and patient identities are masked before any cloud call. It combines hybrid RAG (0.955 Recall@1), explainable risk models and chest X-ray triage. Built with FastAPI, pgvector, XGBoost and Next.js.
+**[CareFlow AI](https://github.com/hrdk6/CareFlow-AI)** is a clinical AI platform with access-controlled RAG, explainable risk models and chest X-ray triage. Built with FastAPI, pgvector, XGBoost and Next.js.
 
 ## Toolbox
 
 | | |
 | :-- | :-- |
 | **Languages** | Python · TypeScript · Rust · Go · JavaScript · SQL |
-| **GenAI** | RAG · hybrid search · reranking · LLM agents · LLM evaluation · on-device inference (llama.cpp, Ollama, OpenVINO) |
+| **GenAI** | RAG · hybrid search · reranking · LLM agents · LLM evaluation · on-device inference |
 | **ML** | scikit-learn · XGBoost · SHAP · ONNX Runtime · transfer learning |
 | **Backend & apps** | FastAPI · PostgreSQL · pgvector · Next.js · Tauri 2 |
 | **Infra** | Docker · Kubernetes · GitHub Actions |
