@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner-laptop.svg" alt="Hardik Gaonkar, AI and ML undergraduate in Bengaluru, open to AI/ML internships. An animated laptop types code while a pointer clicks Run and a mouse clicks." width="100%">
+  <img src="assets/profile-banner.svg" alt="Hardik Gaonkar, AI and ML undergraduate in Bengaluru. An animated laptop types code while a pointer clicks Run and a mouse clicks." width="100%">
 
   <p>
     <a href="https://my-portfolio-hrdk2.vercel.app"><b>Portfolio</b></a> &nbsp;&middot;&nbsp;
